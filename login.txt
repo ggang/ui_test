@@ -1,0 +1,9 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Test Cases ***
+login
+    open browser    http://www.baidu.com
+    input text    id=kw    1000
+    click button    id=su
+    close browser
